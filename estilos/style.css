@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+:root{
+    --cor01: rgb(50, 50, 56);
+    --cor02: rgb(11, 12, 11);
+    --cor03: rgb(75, 75, 75);
+    --cor04: rgb(194, 221, 213);
+    
+}
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px; 
+}
+.lateral{
+    background-color: var(--cor02);
+    width: 23vw;
+    height: 100vh;
+    position: fixed;
+}
+aside > div > h1{
+    color: var(--cor04);
+}
+.principal{
+    background-color: ;
+}
+div img {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    border-radius: 60%;
+}
+#perfil {
+    width: 100px;
+    height: 70px;
+}
+.principal{
+  display: block;
+  position: absolute;
+  width: 70vw;
+  height: 100vh;
+  left: 25%;
+}
