@@ -4,8 +4,7 @@
     --cor01: rgb(50, 50, 56);
     --cor02: rgb(11, 12, 11);
     --cor03: rgb(75, 75, 75);
-    --cor04: rgb(194, 221, 213);
-    
+    --cor04: rgb(194, 221, 213); 
 }
 
 *{
@@ -26,9 +25,10 @@ aside > div > h1{
     background-color: ;
 }
 div img {
+    display: block;
     position: absolute;
     top: 40%;
-    left: 70%;
+    left: 60%;
     border-radius: 60%;
 }
 #perfil {
