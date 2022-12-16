@@ -1,8 +1,57 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 :root{
     --cor01: rgb(50, 50, 56);
     --cor02: rgb(11, 12, 11);
     --cor03: rgb(75, 75, 75);
     --cor04: rgb(194, 221, 213); 
+}
+*{
+    font-family: 'Poppins', sans-serif;;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html{
+    background-image: url(../imagens/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+}
+.vertical{
+    margin-left: 10px;
+    position: absolute;
+    font-size: 1.5em;
+    top: 25%;
+    list-style: none;
+}
+.horizontal{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    list-style: none;
+}
+.horizontal ul > li{
+    display: inline;
+    float: left;
+    font-size: 1.3em;
+} 
+li{
+    width: 42px;
+    height: 42px;
+    margin: 10px 10px;
+}
+.vertical ul > li{
+    background-color: rgb(228, 225, 225);
+    border-radius: 50%;
+}
+.coricon{
+    color: black;
+}
+h1{
+    font-size: 3em;
+    padding-left: 10px;
 }
