@@ -1,18 +1,2 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 260px) and (max-width: 620px) {
-    body{
-        background-color: rgb(226, 223, 223);
-    }
-    p{
-        text-align: justify;
-    }
-    div h1 {
-        text-align: center;
-        color: white;
-    }
-    div img {
-        display: none;
-    }
-    
-}
