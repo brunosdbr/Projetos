@@ -11,27 +11,27 @@
 
 @media screen and (min-width: 400px) and (max-width: 600px){
 
-    body, html{
+    body, html {
         background-image: url(../imagens/background.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;  
     }
-    .vertical{
+    .vertical {
         margin-left: 10px;
         position: absolute;
         font-size: 1.8em;
         top: 25%;
         list-style: none;
     }
-    .horizontal{
+    .horizontal {
         position: absolute;
         top: 50%;
         left: 35%;
         list-style: none;
     }
-    .horizontal ul > li{
+    .horizontal ul > li {
         display: inline;
         float: left;
         font-size: 1.5em;
@@ -57,6 +57,7 @@
         position: absolute;
         left: 35%;
         top: 40%;
+        color: green;
     }
 }
 /*texto animado*/
