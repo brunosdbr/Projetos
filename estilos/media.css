@@ -8,7 +8,7 @@
     --cor03: rgb(75, 75, 75);
     --cor04: rgb(194, 221, 213); 
 }
-@media screen and (min-width: 250px) and (max-width: 500px){
+@media screen and (min-width: 250px) and (max-width: 600px){
 
     html{
         height: 10vh;
