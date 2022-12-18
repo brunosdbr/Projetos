@@ -24,11 +24,6 @@ body{
     display: flex;
     align-items: center;  
 }
-h2{
-    position: absolute;
-    left: 40%;
-    top: 50%;
-}
 .vertical{
     margin-left: 10px;
     position: absolute;
@@ -66,19 +61,32 @@ h1{
     left: 35%;
     top: 35%;
 }
+h2{
+    font-size: 2em;
+    position: absolute;
+    left: 38%;
+    top: 50%;
+}
+h3{
+    font-size: 2em;
+    color: var(--cor02);
+    position: absolute;
+    left: 53%;
+    top: 50%;
+}
 h3::depois{
-    conteúdo: '|';
-    margem esquerda: 5px;
-    opacidade: 1;
-    animação: pisca .7s infinito;
+    contain: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .5s infinite;
 }
 
 @keyframes pisca {
     0%,100% {
-        opacidade: 1;
+        opacity: 1;
     }
     50%{
-        opacidade: 0;
+        opacity: 0;
     }    
 }
 /*texto animado*/
