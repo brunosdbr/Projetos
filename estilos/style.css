@@ -14,12 +14,20 @@
     padding: 0px;
 }
 
-body, html{
+
+body{
     background-image: url(../imagens/background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;  
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;  
+}
+h2{
+    position: absolute;
+    left: 40%;
+    top: 50%;
 }
 .vertical{
     margin-left: 10px;
@@ -30,7 +38,7 @@ body, html{
 }
 .horizontal{
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 40%;
     list-style: none;
 }
@@ -56,59 +64,81 @@ h1{
     padding-left: 10px;
     position: absolute;
     left: 35%;
-    top: 40%;
+    top: 35%;
+}
+h3::depois{
+    conteúdo: '|';
+    margem esquerda: 5px;
+    opacidade: 1;
+    animação: pisca .7s infinito;
+}
+
+@keyframes pisca {
+    0%,100% {
+        opacidade: 1;
+    }
+    50%{
+        opacidade: 0;
+    }    
 }
 /*texto animado*/
-.container {
+/*.container{
     display: inline-flex;
-    left: 50%;
+    position: absolute;
+    width: 400px;
     top: 50%;
+    left: 50%;
 }
-.container .estatico{
-    color: rgb(34, 33, 33);
-    font-size: 60px;
+.estatico{
+    position: absolute;
+    width: 200px;
+    left: -20%;
+}
+.dinamico{
+    width: 400px;
+}
+.container .estatico {
+    color: var(--cor01);
+    font-size: 30px;
     font-weight: 400;
 }
-.container .dinamico{
+.container .dinamico {
     margin-left: 15px;
     line-height: 90px;
     height: 90px;
     overflow: hidden;
 }
 .dinamico li{
-    color: #fc6d6d;
+    color: var(--cor02);
     list-style: none;
-    font-size: 60px;
-    font-weight: 500;
-    left: 0;
+    font-size: 30px;
     position: relative;
     top: 0;
-    animation: slide 6s steps(4) infinite;
+    left: 0;
+    animation: slide 4s steps(4) infinite;
 }
-@keyframes slide{
+@keyframes slide {
     100%{
         top: -360px;
     }
 }
-.dinamico li span{
-    position: relative;
-}
-.dinamico li span::after{
+.dinamico li span::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     left: 0;
-    border-left: 2px solid #fc6d6d;
-    animation: typing 1.5s steps(10) infinite;
-    background: #111111;
+    border-right: 2px solid var(--cor02);
+    animation: typing 1.5s steps(5) infinite;
+    background-color: none;
 }
-dinamico li span{
+.dinamico li span{
     position: relative;
 }
 @keyframes typing{
     100%{
-        left: 100%;
-        margin: 0 -35px 0 35px;
-    }
-}
+        right: 100%;
+        margin: 0 35px 0 -35px;
+    } 
+}*/
+
