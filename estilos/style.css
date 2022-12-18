@@ -64,14 +64,15 @@ h1{
 h2{
     font-size: 2em;
     position: absolute;
-    left: 38%;
+    left: 36%;
     top: 50%;
 }
 h3{
     font-size: 2em;
     color: var(--cor02);
+    width: 400px;
     position: absolute;
-    left: 53%;
+    left: 52%;
     top: 50%;
 }
 h3::depois{

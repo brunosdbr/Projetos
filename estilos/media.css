@@ -26,7 +26,7 @@
     }
     .horizontal {
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 35%;
         list-style: none;
     }
@@ -51,12 +51,25 @@
         color: var(--cor02);
     }
     h1{
-        font-size: 2.7em;
+        font-size: 2.4em;
         padding-left: 10px;
         position: absolute;
         left: 35%;
         top: 40%;
         color: rgb(4, 36, 83);
+    }
+    h2{
+        font-size: 1.4em;
+        position: absolute;
+        left: 36%;
+        top: 50%;
+    }
+    h3{
+        font-size: 1.3em;
+        color: var(--cor02);
+        position: absolute;
+        left: 52%;
+        top: 50%;
     }
 }
 
