@@ -47,19 +47,36 @@ li{
     height: 42px;
     margin: 10px 10px;
 }
-.vertical ul li{
+li:hover{
+    width: 52px;
+    height: 52px;
+    margin-left: 5px;
+}
+.vertical ul > li{
     background-color: rgb(228, 225, 225);
     border-radius: 50%;
-
-    display: inline-block;
-    position: absolute;
-    left: 10px;
+    display: block;
+    position: relative;
+    left: 20%;
+    top: 25%;
+}
+.vertical ul > li:hover{
+    background: rgb(64, 64, 211);
 }
 .coricon{
     color: var(--cor01);
 }
 .coricon1{
-    color: var(--cor02);
+    color: var(--cor03);
+    position: absolute;
+    left: 20%;
+    top: 8px;
+}
+.coricon1:hover{
+    color: white;
+    left: 15px;
+    top: 11px;
+   
 }
 h1{
     font-size: 3.5em;
