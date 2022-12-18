@@ -38,11 +38,12 @@
     </div>-->
     <div class="horizontal">
         <ul style="list-style: none;">
-            <li><a href="#"><ion-icon name="logo-instagram" class="coricon"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-twitter" class="coricon"></ion-icon></a></li>
-            <li><a href="#"></a><ion-icon name="logo-facebook" class="coricon"></ion-icon></li>
-            <li><a href="#"></a><ion-icon name="logo-linkedin" class="coricon"></ion-icon></li>
-            <li><a href="#"><ion-icon name="logo-youtube" class="coricon"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram" class="coricon"></ion-icon></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><ion-icon name="logo-twitter" class="coricon"></ion-icon></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"></a><ion-icon name="logo-facebook" class="coricon"></ion-icon></li>
+            <li><a href="https://br.linkedin.com/" target="_blank"></a><ion-icon name="logo-linkedin" class="coricon"></ion-icon></li>
+            <li><a href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube" class="coricon"></ion-icon></a></li>
+            <li><a href="https://github.com/" target="_blank"><ion-icon name="logo-github" class="coricon"></ion-icon></a></li>
         </ul>
     </div>
     <!--importação de icones-->
@@ -62,26 +63,21 @@ let isEnd = false
 function loop () {
   isEnd = false
   textDisplay.innerHTML = currentPhrase.join('')
-
   if (i < phrases.length) {
-
     if (!isDeleting && j <= phrases[i].length) {
       currentPhrase.push(phrases[i][j])
       j++
       textDisplay.innerHTML = currentPhrase.join('')
     }
-
     if(isDeleting && j <= phrases[i].length) {
       currentPhrase.pop(phrases[i][j])
       j--
       textDisplay.innerHTML = currentPhrase.join('')
     }
-
     if (j == phrases[i].length) {
       isEnd = true
       isDeleting = true
     }
-
     if (isDeleting && j === 0) {
       currentPhrase = []
       isDeleting = false
@@ -96,9 +92,7 @@ function loop () {
   const time = isEnd ? 2000 : isDeleting ? spedUp : normalSpeed
   setTimeout(loop, time)
 }
-
 loop()
     </script>
-    
 </body>
 </html>

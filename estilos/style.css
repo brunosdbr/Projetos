@@ -33,49 +33,57 @@ body{
 }
 .horizontal{
     position: absolute;
-    top: 65%;
-    left: 40%;
+    top: 57%;
+    left: 35%;
     list-style: none;
 }
 .horizontal ul > li{
     display: inline;
     float: left;
-    font-size: 1.3em;
+    font-size: 1.4em;
 } 
 li{
     width: 42px;
     height: 42px;
     margin: 10px 10px;
 }
-.vertical ul > li{
+.vertical ul li{
     background-color: rgb(228, 225, 225);
     border-radius: 50%;
+
+    display: inline-block;
+    position: absolute;
+    left: 10px;
 }
 .coricon{
-    color: black;
+    color: var(--cor01);
+}
+.coricon1{
+    color: var(--cor02);
 }
 h1{
-    font-size: 3em;
+    font-size: 3.5em;
+    color: var(--cor03);
     padding-left: 10px;
     position: absolute;
     left: 35%;
     top: 35%;
 }
 h2{
-    font-size: 2em;
+    font-size: 1.4em;
     position: absolute;
-    left: 36%;
+    left: 35.8%;
     top: 50%;
 }
 h3{
-    font-size: 2em;
+    font-size: 1.4em;
     color: var(--cor02);
     width: 400px;
     position: absolute;
-    left: 52%;
+    left: 41.5%;
     top: 50%;
 }
-h3::depois{
+h3::after{
     contain: '|';
     margin-left: 5px;
     opacity: 1;
