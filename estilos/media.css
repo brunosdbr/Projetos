@@ -20,20 +20,20 @@
     .vertical {
         margin-left: 10px;
         position: absolute;
-        font-size: 1.8em;
+        font-size: 1.4em;
         top: 25%;
         list-style: none;
     }
     .horizontal {
         position: absolute;
-        top: 60%;
+        top: 54%;
         left: 35%;
         list-style: none;
     }
     .horizontal ul > li {
         display: inline;
         float: left;
-        font-size: 1.5em;
+        font-size: 1.1em;
     } 
     li{
         width: 42px;
@@ -43,6 +43,8 @@
     .vertical ul > li{
         background-color: rgb(228, 225, 225);
         border-radius: 50%;
+        width: 30px;
+        height: 30px;
     }
     .coricon{
         color: rgb(40, 40, 43);
@@ -51,7 +53,7 @@
         color: var(--cor02);
     }
     h1{
-        font-size: 2.4em;
+        font-size: 2em;
         padding-left: 10px;
         position: absolute;
         left: 35%;
@@ -59,17 +61,17 @@
         color: rgb(4, 36, 83);
     }
     h2{
-        font-size: 1.4em;
+        font-size: 1em;
         position: absolute;
         left: 36%;
         top: 50%;
     }
     h3{
-        font-size: 1.3em;
+        font-size: 0.9em;
         color: var(--cor02);
         position: absolute;
-        left: 52%;
-        top: 50%;
+        left: 46.5%;
+        top: 50.5%;
     }
 }
 
