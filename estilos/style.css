@@ -13,26 +13,42 @@
     margin: 0px;
     padding: 0px;
 }
-
-body{
-    background-image: linear-gradient(90deg, rgb(207, 198, 198), rgb(78, 73, 73));  
-}
 .vertical{
-    width: 40px;
-    height: 240px;
     position: absolute;
-    font-size: 1.5em;
-    top: 30%;
-    left: 5px;
-    list-style: none;
+    top: 20%;
+    font-size: 1.7em;
 }
-.vertical ul{
-    padding: 10px;
+.vertical a{
+    border-radius: 50%;
+    background-color: rgb(230, 230, 230);
+    margin: 15px;
+    padding: 15px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: var(--cor02);
+    transition: width .5s, height .5s;
 }
-.vertical ul > li > a{
-    margin: 0px;
-    padding: 0px;
+.vertical :hover{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: rgb(57, 38, 226);
+    
 }
+.vertical a:hover{
+    color: rgb(255, 255, 255);
+}
+#icon{
+    position: absolute;
+    left: 25px;
+    width: 30px;
+    height: 30px;
+
+}
+
+
+/*menu horizontal*/
 .horizontal{
     position: absolute;
     top: 57%;
@@ -44,12 +60,9 @@ body{
     float: left;
     font-size: 1.4em;
 } 
-li{
-    width: 24px;
-    height: 24px;
-    margin: 10px 10px;
-}
+
 li:hover{
+    position: fixed;
     width: 48px;
     height: 48px;
     margin-left: 5px;
@@ -63,7 +76,7 @@ li:hover{
     top: 25%;
 }
 .vertical ul > li:hover{
-    background: rgb(64, 64, 211);
+    background: rgb(124, 124, 219);
 }
 h1{
     font-size: 3.5em;
@@ -81,7 +94,7 @@ h2{
 }
 h3{
     font-size: 1.4em;
-    color: var(--cor02);
+    color: var(--cor03);
     width: 400px;
     position: absolute;
     left: 41.5%;
