@@ -8,14 +8,13 @@
     --cor03: rgb(75, 75, 75);
     --cor04: rgb(194, 221, 213); 
 }
-@media screen and (min-width: 250px) and (max-width: 600px){
+@media screen and (max-width:600px){
 
     html{
         height: 10vh;
     }
-
     body{
-        background-image: url(../imagens/background.jpg);
+        background-image: linear-gradient(90deg, rgb(207, 198, 198), rgb(78, 73, 73));
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -31,17 +30,18 @@
     .horizontal {
         position: absolute;
         top: 54%;
-        left: 35%;
+        left: 34%;
         list-style: none;
     }
     .horizontal ul > li {
         display: inline;
         float: left;
         font-size: 1.1em;
+       
     } 
     li{
-        width: 42px;
-        height: 42px;
+        width: 24px;
+        height: 24px;
         margin: 10px 10px;
     }
     .vertical ul > li{
@@ -50,17 +50,27 @@
         width: 30px;
         height: 30px;
     }
+    a{
+        width: 20px;
+        height: 20px;
+        margin-bottom: 1px;
+        padding: 0px;
+    }
     .coricon{
+        margin: 0px;
+        padding: 0px;
         color: rgb(40, 40, 43);
     }
     .coricon1{
+        margin: 0px;
+        padding: 0px;
         color: var(--cor02);
     }
     h1{
         font-size: 2em;
         padding-left: 10px;
         position: absolute;
-        left: 35%;
+        left: 34%;
         top: 40%;
         color: rgb(4, 36, 83);
     }
