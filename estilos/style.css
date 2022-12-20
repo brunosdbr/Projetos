@@ -8,6 +8,7 @@
     --cor03: rgb(75, 75, 75);
     --cor04: rgb(194, 221, 213);
     --cor05: rgb(133, 186, 247);
+    --cor06: rgb(144, 214, 247);
     
     --icon01: url(../imagens/linkedin-icon.png);
     --icon01: url(../imagens/Instagram-Icon.png);
@@ -25,7 +26,7 @@
 .vertical{
     position: absolute;
     top: 15%;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 .vertical a{
     border-radius: 50%;
@@ -40,9 +41,9 @@
 }
 .vertical :hover{
     border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    background-color: rgb(57, 38, 226);
+    width: 34px;
+    height: 34px;
+    background-color: var(--cor05);
 }
 .vertical a:hover{
     color: rgb(255, 255, 255);
@@ -51,23 +52,25 @@
 .horizontal{
     position: absolute;
     top: 60%;
-    left: 35.2%;
-    float: inline;
+    left: 25%;
+    display: inline;
     list-style: none;
 }
 .horizontal a{
     border-radius: 50%;
-    margin: 15px;
-    padding: 15px;
-    display: inline;
-    width: 30px;
-    height: 30px;
+    padding: 16px 20px 16px 20px;
+    margin: 0px 5px 0px 5px;
     color: var(--cor02);
     transition: width .5s, height .5s;
 }
+.horizontal a:hover{
+    border-radius: 50%;
+    border: 1px solid rgb(192, 190, 190);
+    transition: ;
+ 
+}
 .visual:hover{
     visibility: hidden;
-    position: fixed;
 }
 .horizontal > #icon1:hover{
     background-image: url(../imagens/linkedin-icon.ico);
@@ -111,7 +114,7 @@ h1{
     color: var(--cor03);
     padding-left: 10px;
     position: absolute;
-    left: 35%;
+    left: 25%;
     top: 35%;
 }
 
