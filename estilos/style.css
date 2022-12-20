@@ -7,7 +7,7 @@
     --cor02: rgb(11, 12, 11);
     --cor03: rgb(75, 75, 75);
     --cor04: rgb(194, 221, 213);
-    --cor05: rgb(48, 137, 240);
+    --cor05: rgb(133, 186, 247);
     
     --icon01: url(../imagens/linkedin-icon.png);
     --icon01: url(../imagens/Instagram-Icon.png);
@@ -24,7 +24,7 @@
 /*menu vertical*/
 .vertical{
     position: absolute;
-    top: 20%;
+    top: 15%;
     font-size: 1.5em;
 }
 .vertical a{
@@ -47,8 +47,6 @@
 .vertical a:hover{
     color: rgb(255, 255, 255);
 }
-
-
 /*menu horizontal*/
 .horizontal{
     position: absolute;
@@ -58,17 +56,56 @@
     list-style: none;
 }
 .horizontal a{
-    color: var(--cor02);
-    padding: 15px;
-}
-.horizontal > a:hover {
     border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    background-color: rgb(57, 38, 226);
-    transition: width 1s, height 1s;
+    margin: 15px;
+    padding: 15px;
+    display: inline;
+    width: 30px;
+    height: 30px;
+    color: var(--cor02);
+    transition: width .5s, height .5s;
 }
-
+.visual:hover{
+    visibility: hidden;
+    position: fixed;
+}
+.horizontal > #icon1:hover{
+    background-image: url(../imagens/linkedin-icon.ico);
+    background-position: center center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+.horizontal > #icon2:hover{
+    background-image: url(../imagens/Instagram-Icon.ico);
+    background-position: center center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+.horizontal > #icon3:hover{
+    background-image: url(../imagens/twitter-icon.ico);
+    background-position: center center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+.horizontal > #icon4:hover{
+    background-image: url(../imagens/facebook-icon.ico);
+    background-position: center center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+.horizontal > #icon5:hover{
+    background-image: url(../imagens/github-icon.ico);
+    background-position: center center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+.horizontal > #icon6:hover{
+    background-image: url(../imagens/youtube-icon.ico);
+    background-position: center center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+/*nome*/
 h1{
     font-size: 3.5em;
     color: var(--cor03);
@@ -77,14 +114,14 @@ h1{
     left: 35%;
     top: 35%;
 }
+
+/*texto animado*/
 h2{
     font-size: 1.4em;
     position: absolute;
     left: 35.8%;
-    top: 50%;
+    top: 50%; 
 }
-
-/*texto animado*/
 h3{
     font-size: 1.4em;
     color: var(--cor05);
